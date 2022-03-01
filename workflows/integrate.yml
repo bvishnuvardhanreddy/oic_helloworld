@@ -1,0 +1,16 @@
+name: Node Continuous Integration
+
+on:
+  pull_request:
+    branches: [ master ]
+
+
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Using checkout from Market Place
+      - uses: actions/checkout@v2
+      
+      - run: echo "HelloWorld"
+      - run: curl --help      
