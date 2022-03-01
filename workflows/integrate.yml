@@ -2,7 +2,7 @@ name: Node Continuous Integration
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 
 jobs:
@@ -12,5 +12,5 @@ jobs:
       - name: Using checkout from Market Place
       - uses: actions/checkout@v2
       
-      - run: echo "HelloWorld"
+      - run: echo "HelloWorld2"
       - run: curl --help      
